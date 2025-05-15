@@ -58,7 +58,7 @@ const getAIResponse = async (message) => {
     return response.data.choices[0].message.content.trim();
   } catch (error) {
     console.error('OpenAI API error:', error.response?.data || error.message);
-    return 'Sorry, I couldn't process your request at the moment.';
+    return "Sorry, I couldn't process your request at the moment."; // Fixed the quotes here
   }
 };
 
