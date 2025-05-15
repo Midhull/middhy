@@ -1,0 +1,12 @@
+{
+  "appointments": [
+    {
+      "id": 1,
+      "doctor": "Dr. Smith",
+      "specialty": "Cardiology",
+      "date": "2023-12-15",
+      "time": "10:00 AM",
+      "status": "Confirmed"
+    }
+  ]
+}
