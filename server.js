@@ -10,7 +10,7 @@ import { body, validationResult } from 'express-validator';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001; // Changed to 3001 to avoid conflict
 
 // Middleware
 app.use(cors({
@@ -58,7 +58,7 @@ const getAIResponse = async (message) => {
     return response.data.choices[0].message.content.trim();
   } catch (error) {
     console.error('OpenAI API error:', error.response?.data || error.message);
-    return 'Sorry, I couldn’t process your request at the moment.';
+    return 'Sorry, I couldn't process your request at the moment.';
   }
 };
 
